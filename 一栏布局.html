@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习Git</title>
+    <style>
+        .header {
+            margin: 0 auto;
+            max-width: 1920px;
+            height: 100px;
+            background-color: pink;
+
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1920px;
+            height: 400px;
+            background-color: skyblue;
+
+        }
+
+        .footer {
+            margin: 0 auto;
+            max-width: 1920px;
+            height: 100px;
+            background-color: #000;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">先通过对 header,content,footer 统一设置 width：1000px;或者 max-width：1000px(这两者的区别是当屏幕小于 1000px
+        时，前者会出现滚动条，后者则不会，显示出实际宽度);然后设置
+        margin:auto 实现居中即可得到。</div>
+    <div class="content">
+        先通过对 header,content,footer 统一设置 width：1000px;或者 max-width：1000px(这两者的区别是当屏幕小于 1000px
+        时，前者会出现滚动条，后者则不会，显示出实际宽度);然后设置
+        margin:auto 实现居中即可得到。
+    </div>
+    <div class="footer"></div>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            setTimeout(() => {
+                console.log(i);
+            }, 0);
+        }
+        function zhishu() {
+            var str = "", n = 0;
+            for (var i = 1; i <= 200; i++) {
+                var m = 0;
+                for (var j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        m = 1;
+                        break;
+                    }
+                }
+                if (m == 0 && i != 1) {
+                    str = str + i + "，";
+                    n++;
+                }
+            }
+            console.log("1-200间的质数总数为：" + n + " 个");
+            console.log("1-200间的质数分别为：" + str.substr(0, str.length - 1));
+        }
+        zhishu();
+    </script>
+</body>
+
+</html>
